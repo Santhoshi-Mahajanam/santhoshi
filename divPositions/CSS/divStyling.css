@@ -1,0 +1,30 @@
+.box{
+	width:100%;
+	height:50em;
+	margin:0px;
+	padding:0px;
+	background-color:grey;
+	display:block;
+}
+.box1{
+	
+	width:20%;
+	padding:20px;
+	background-color:violet;
+	height:20%;
+	position:fixed;
+	margin:20px;
+	text-align:center;
+}
+.box2{
+	
+	width:20%;
+	padding:20px;
+	background-color:black;
+	height:20%;
+	position:fixed;
+	margin-left:700px;
+	margin-top:20px;
+	text-align:center;
+	color:white;
+}

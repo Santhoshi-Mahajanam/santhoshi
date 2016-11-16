@@ -1,0 +1,75 @@
+<html>
+	<head>
+	<!--title describes the purpose of program viewing employee details-->
+		<title>program for viewing employee details</title>
+		<!--this links css to js-->
+		<style link="CSS/employee.css" rel="stylesheet">
+		</style>
+		<!--importing angular min file-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<!--including js file to view-->
+		<script src="JS/employeeDetails.js" type="text/javascript">
+		</script>
+	</head>
+	<!--initializing angular app-->
+	<body ng-app="empApp">
+	<!--this div give access to the entered details to js-->
+		<div ng-controller="storingEmpDetCtrl">
+			<h2><b>employee name:</h2></b>
+			<input type="text" placeholder="enter name" ng-model="empName"><br>
+			<h2><b>employee number:</h2></b>
+			<input type="text" placeholder="enter number" ng-model="empNum"><br>
+			<h2><b>employee designation:</h2></b>
+			<input type="text" placeholder="enter designation" ng-model="empDesignation"><br>
+			<h2><b>experience:</h2></b>
+			<input type="text" placeholder="enter name" ng-model="experience"><br>
+			<h2><b>employee dob:</h2></b>
+			<input type="date"><br><br>
+			<button type="button" ng-click="storeDetails()">storeDetails</button>
+			<!--this accepts only csv files and shows json data in view-->
+			<div ng-controller="MainCtrl">
+			  <h1>Select text file</h1>
+				<input type="file" on-read-file="showContent($fileContent)" accept=".csv"/>
+				<div ng-if="content">
+					<h2>File content is:</h2>
+					<pre>{{ content }}</pre>
+				</div>
+			</div>
+			
+		<!--on clicking this button converts json to csv format-->
+			<button type="button" ng-click="convertCsv()">export</button>
+			<!--this shows employee data in table format-->
+			<table>
+				<tr>
+					<th>employee name</th>
+					<th>employee num</th>
+					<th>employee designation</th>
+					<th>employee experience</th>
+				</tr>
+				<tr ng-repeat="emp in view track by $index">
+					<td>{{emp.empName}}</td>
+					<td>{{emp.empNum}}</td>
+					<td>{{emp.empDesignation}}</td>
+					<td>{{emp.experience}}</td>
+					<!--this button edits employee details-->
+					<td><button type="button" ng-click="edit(emp)">editEmp</button></td>
+					<!--this button deletes the employee details-->
+					<td><button type="button" ng-click="delete(emp.empNum)">deleteEmp</button></td>
+				</tr>
+			</table>
+			<!--if display becomes true then the below fields shown in view otherwise not-->
+			<div ng-show="display">
+				<h2><b>employee name:</h2></b>
+				<input type="text" placeholder="enter name" ng-model="empName"><br>
+				<h2><b>employee number:</h2></b>
+				<input type="text" placeholder="enter number" ng-model="empNum"><br>
+				<h2><b>employee designation:</h2></b>
+				<input type="text" placeholder="enter designation" ng-model="empDesignation"><br>
+				<h2><b>experience:</h2></b>
+				<input type="text" placeholder="enter name" ng-model="experience"><br>
+				<!--this button updates the employee profile-->
+				<button type="button" ng-click="update()">updateprofile</button>
+			</div>
+		</div>
+	</body>
+</html>
