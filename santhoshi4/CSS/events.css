@@ -1,0 +1,51 @@
+.perDiv1{
+  float:left;
+  background-color:blue;
+  display:inline-block;
+}
+.perDiv2{
+  float:right;
+  background-color:black!important;
+  color: white;
+  display: inline-block;
+}
+.outerDiv{
+width:50%;
+height:50%;
+background-color:violet;
+margin-left: 25%;
+margin-top: 25%;
+}
+
+.innerDiv1{
+  width:50%;
+  height:50%;
+  background-color:grey;
+
+  float:left;
+  text-align: center;
+}
+.innerDiv2{
+  width:50%;
+  height:50%;
+  background-color:cyan;
+
+float: right;
+text-align: center;
+}
+.innerDiv3{
+  width:50%;
+  height:50%;
+  background-color:cyan;
+
+float: left;
+text-align: center;
+}
+.innerDiv4{
+  width:50%;
+  height:50%;
+  background-color:grey;
+
+float: right;
+text-align: center;
+}
