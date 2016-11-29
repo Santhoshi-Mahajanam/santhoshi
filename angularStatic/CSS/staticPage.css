@@ -1,0 +1,23 @@
+.static{
+  height:50px;
+  width:50px;
+  top:50%;
+  left:40%;
+  position:absolute;
+  background-color:chocolate;
+  padding: 50px;
+}
+html{
+  background-color:cornsilk;
+}
+body{
+  background-color: violet;
+  height:100px;
+  width:100px;
+  padding-left: 50%;
+  padding-top:50%;
+  margin-left: 15%;
+  margin-top:15%;
+  top:50%;
+  left:50%;
+}
