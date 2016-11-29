@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>program for doing dynamic page</title>
+		<link href="CSS/dynamicPage.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="JS/dynamicPage.js"></script>
+	</head>
+	<body ng-app="dynamicApp">
+		<div ng-controller="dynamicCtrl">
+			<input type="text" placeholder="enter any name" ng-model="name" ng-change="change()" />
+			<div>
+				<h1><b>the entered name is: <p class="pname">{{ enteredName}}</p></b></h1>
+			</div>
+		</div>
+	</body>
+</html>
