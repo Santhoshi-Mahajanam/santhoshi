@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <th>employee number</th>
+    <th>employee name</th>
+  </tr>
+  <tr ng-repeat="emp in data">
+    <td>{{emp.empNum}}</td>
+    <td>{{emp.empName}}</td>
+  <td>
+    <button type="button" ng-click="delete()">delete</button>
+  </td>
+  </tr>
+</table>

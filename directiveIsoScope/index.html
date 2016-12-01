@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/isolatedScopeUsage.js"></script>
+  </head>
+  <body ng-app="isolatedApp">
+    <div ng-controller="isolatedScopeCtrl1">
+    <first-directive ng-if="dataFromService.length>0" data="dataFromService" delete="Button($index)"></first-directive>
+    
+  </div>
+  <div ng-controller="isolatedScopeCtrl2">
+  <first-directive ng-if="dataFromService.length>0" data="dataFromService" delete="Button($index)"></first-directive>
+</div>
