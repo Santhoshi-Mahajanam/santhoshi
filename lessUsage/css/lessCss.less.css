@@ -1,0 +1,20 @@
+@colo :#00b3b3;
+table{
+	border-collapse: collapse;
+    width: 100%;
+    tr:nth-child(even){
+		background-color: blanchedalmond;
+		td{
+		text-align: left;
+	    padding: 8px;
+		}
+	}
+	tr:nth-child(odd){
+		background-color:lighten(@colo, 30%);;
+		td{
+		text-align: left;
+	    padding: 8px;
+		}
+	}
+	
+}

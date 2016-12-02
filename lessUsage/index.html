@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="js/less.js" type="text/javascript"></script>
+		<link href="css/lessCss.css" rel="stylesheet">
+	</head>
+	<body ng-app="myApp">
+		<table ng-controller="myCtrl">
+			<tr>
+				<th>AlphaNumeric</th>
+				<th>Numeric</th>
+				<th>Animal</th>
+				<th>sites</th>
+			</tr>
+			<tr ng-repeat="data in store.tableData">
+				<td>{{data.AlphaNumeric}}</td>
+				<td>{{data.Numeric}}</td>
+				<td>{{data.Animal}}</td>
+				<td>{{data.sites}}</td>
+			</tr>
+			<tr>{{store}}</tr>
+		</table>
+	</body>
+</html>
