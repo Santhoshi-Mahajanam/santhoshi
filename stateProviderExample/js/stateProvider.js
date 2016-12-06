@@ -20,23 +20,23 @@ $stateProvider
 })
 .state("home.jerry",{
 	url:"/jerry",
-	templateUrl:"assets/jerry.txt"
+	templateUrl:"assets/jerry.html"
 })
 .state("home.fish",{
 	url:"/jerry",
-	templateUrl:"assets/fish.txt"
+	templateUrl:"assets/fish.html"
 })
 .state("home.noddy",{
 	url:"/jerry",
-	templateUrl:"assets/noddy.txt"
+	templateUrl:"assets/noddy.html"
 })
 .state("home.tweety",{
 	url:"/jerry",
-	templateUrl:"assets/tweety.txt"
+	templateUrl:"assets/tweety.html"
 })
 .state("home.oswald",{
 	url:"/jerry",
-	templateUrl:"assets/oswald.txt"
+	templateUrl:"assets/oswald.html"
 })
 }]);
 
