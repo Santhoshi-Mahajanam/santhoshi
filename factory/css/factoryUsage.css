@@ -1,0 +1,1 @@
+table{background-color:bisque;width:50%;border:10px solid azure}table tr:nth-child(odd){background-color:#ccc}table tr:nth-child(even){background-color:pink;opacity:1;filter:alpha(opacity=100);text-align:left}table th{color:#5f9ea0;opacity:1;filter:alpha(opacity=100);text-align:left}.opace{opacity:1;filter:alpha(opacity=100);text-align:left}

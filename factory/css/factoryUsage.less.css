@@ -1,0 +1,27 @@
+table{
+	background-color:@bi;
+	width:50%;
+	border:10px solid azure;
+	tr:nth-child(odd) {
+   		background-color: #ccc;
+   		
+	}
+	tr:nth-child(even) {
+   		background-color: pink;
+   		.opace
+	}
+	th{
+		
+		color:@cadet;
+		.opace
+	}
+}
+
+.opace{
+	opacity: 1;
+    filter: alpha(opacity=100);
+    text-align: left;
+}
+
+@cadet:cadetblue;
+@bi:bisque;

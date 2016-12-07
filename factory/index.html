@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>usage of factory with less and promises</title>
+		<link href="css/factoryUsage.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="js/factoryUsage.js"></script>
+	</head>
+	<body ng-app="factoryApp" ng-controller="factoryCtrl">
+			
+		<table >
+			<tr>
+				<th>character</th>
+				<th>weight</th>
+				<th>height</th>
+				
+			</tr>
+			<tr ng-repeat="data in jsonData">
+				<td>{{data.character}}</td>
+				<td>{{data.weight}}</td>
+				<td>{{data.height}}</td>
+			</tr>
+			
+		</table>
+	</body>
+</html>

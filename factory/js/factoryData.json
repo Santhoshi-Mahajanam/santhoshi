@@ -1,0 +1,19 @@
+{
+  "cartoons": [
+    {
+      "character": "chota bheem",
+      "weight": "20",
+      "height": "50"
+    },
+    {
+      "character": "oswald",
+      "weight": "10",
+      "height": "20"
+    },
+    {
+      "character": "jerry",
+      "weight": "20",
+      "height": "10"
+    }
+  ]
+}
