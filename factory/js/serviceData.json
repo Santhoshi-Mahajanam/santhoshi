@@ -1,0 +1,19 @@
+{
+  "students": [
+    {
+      "name": "chota bheem",
+      "marks": "20",
+      "total": "50"
+    },
+    {
+      "name": "oswald",
+      "marks": "10",
+      "total": "20"
+    },
+    {
+      "name": "jerry",
+      "marks": "20",
+      "total": "10"
+    }
+  ]
+}

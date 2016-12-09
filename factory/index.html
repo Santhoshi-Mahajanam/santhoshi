@@ -5,9 +5,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 		<script src="js/factoryUsage.js"></script>
 	</head>
-	<body ng-app="factoryApp" ng-controller="factoryCtrl">
-			
-		<table >
+	<body ng-app="factoryApp" >
+		<table ng-controller="factoryCtrl">
 			<tr>
 				<th>character</th>
 				<th>weight</th>
@@ -19,7 +18,14 @@
 				<td>{{data.weight}}</td>
 				<td>{{data.height}}</td>
 			</tr>
-			
 		</table>
+		<div ng-controller="loopServiceCtrl" class="card">
+			<div ng-repeat="qdata1 in data1.students" class="container">
+				<h3>{{qdata1.name}}</h3>
+				<h3>{{qdata1.marks}}</h3>
+				<h3>{{qdata1.total}}</h3>
+			</div>
+			
+		</div>
 	</body>
 </html>
