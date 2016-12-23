@@ -1,0 +1,124 @@
+li{
+	color:black;
+	padding:10px;
+}
+
+.li2{
+	color:white;
+	padding:10px;
+}
+
+.remove{
+	margin-bottom: 0px !important;
+}
+.com{
+	color:green;
+}
+h1{
+	color:black;
+}
+h1:hover{
+	color: green;
+}
+.glyphiconHome{
+	color:white;
+}
+.sidebar{
+	list-style-type: none;
+	/*height:50%;*/
+	/*position: fixed;*/
+}
+.scrollmenu{
+    overflow-y: scroll;
+    white-space: nowrap;
+	background-color: rgba(0,0,0,0);
+	max-height: 500px;
+	position:fixed;
+	left:10px;
+	top:10px;
+}
+.ul:hover{
+	background-color: gray;
+}
+.image{
+	position: relative;
+	top:15px;
+
+}
+.imageHt{
+	height:100%;
+}
+.buttonPrev{
+	background-color: white;
+	float: left;
+	color:black;
+	margin:0 4 2 0 solid gray;
+}
+.buttonNext{
+	background-color: #4CAF50;
+	left:80%;
+	float: right;
+	
+}
+
+.button{
+	text-align: center;
+	border: none;
+	text-decoration: none;
+	padding:10 12 10 12;
+	font-size: 16px;
+	border-radius: 3px;
+}
+.buttonNext:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.buttonPrev:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*.divContainer{
+	width:50%;
+}*/
+.lastDiv{
+	padding-right: 0px !important;
+}
+.pannel{
+	background-color:#ddffdd;
+}
+.chevron{
+	font-size: 10px;
+	padding:0px;
+	top:0px !important;
+}
+.ContainerClass{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	padding-right: 0px !important;
+	padding-left: 5px !important;
+}
+.tryButton{
+	padding:0px 30px !important;
+	
+}
+.h5{
+	font-size:16px !important;
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+}
+.warningPanelBody{
+	background-color: #ffffcc;
+	border-left: 10px solid #ffeb3b;
+}
+h4{
+	font-size: 16px !important;
+	color: black;
+}
+.panelSuccess{
+	border-left: 10px solid #5cb85c;
+}
+.exceptSideBar{
+	overflow-y:auto;
+	max-height: 500px;
+	border:5px solid green;
+
+}
