@@ -1,0 +1,177 @@
+.logoBar{
+	background-color:white;
+	/*height: 98px*/
+	padding-bottom: 2%;
+}
+.navBar{
+	background-color: rgba(243,243,243,1);
+	margin-bottom: 0px !important;
+}
+.logo{
+	float:left !important;
+	padding-right: 0px !important;
+	left:73px;
+	top:12px;
+	position: relative;
+}
+.searchButtonContainer{
+	float:right !important;
+	top:12px;
+	position:relative;
+}
+
+.mainContainer{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+.navBarContainer{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	margin-right:20px !important;
+
+}
+.mapDetailsContainer{
+	background-color: rgba(252,250,251,1);
+	height:157px;
+
+}
+.searchBox{
+	width:358px;
+	height:42px;
+	right:116px;
+
+}
+.searchBox input{
+	border-radius: 0px !important; 	
+}
+.searchGlyphicon{
+	position: absolute !important;
+    right: 24px;
+    top: 10px !important;
+
+}
+.circle{
+	background: #f00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position:relative;
+    top:6px;
+    left:200px !important;
+}
+.userGlyphicon{
+	position:absolute !important;
+	top:10%;
+	font-size: 18px !important;
+    padding: 7% 5% 5% 10% !important;
+}
+.menuDiv{
+	/*height:64px;
+	width:64px;*/
+	background-color: rgba(135,180,85,1);
+	padding:20px;
+	top:10px;
+	left: 1px;
+}
+.mapMarker{
+	padding-right:36px !important;
+}
+.thLarge{
+	right:20px !important;
+}
+.mainContainer{
+	
+	padding-left:0px !important;
+	padding-right: 0px !important;
+}
+html{
+	width:100% !important;
+}
+.img{
+	left:75px;
+}
+.optionVertical{
+	right:20px !important;
+}
+.Farmer{
+	padding-left:24px !important;
+	top:24px;
+}
+.navBarDisplay{
+	display: inline !important; 
+
+}
+.mapContainer{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	margin-right: -20px !important;
+	margin-left: -20px !important;
+}
+.mapData{
+	padding-left:40px;
+}
+.font{
+	font-size: 30px;
+}
+.font1{
+	font-size: 25px;
+}
+.tintColor{
+	color:rgba(75,143,224,1);
+}
+.map{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	margin-right: -15px !important;
+	margin-left: -15px !important;
+}
+@font-face {
+    font-family: FiraSans-Light;
+    src: url("fira-sans/FiraSans-Light.ttf") format('truetype');
+    color:black;
+}
+*{
+    font-family: FiraSans-Light;
+}
+.userCircle{
+	width: 40px;
+    height: 40px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 20px;
+    background: red;
+    margin-left: 27%;
+	background-color: rgba(216,216,216,1);
+	
+}
+.verticalOption{
+	margin-right: -30px;
+}
+.mapColor{
+	color: rgba(65,159,213,1);
+	top:12px !important;
+}
+.grainColor{
+	color: rgba(209,224,193,1);
+}
+.glyphicon-grain{
+	font-size: 15px;
+}
+.grain{
+	margin-right:-8px;
+}
+.grain1{
+	margin-left: -8px;
+}
+#map {
+    width: 100%;
+    height: 450px;
+}
+.thLarge{
+	top:12px !important;
+}
+b{
+	font-weight:500 !important;
+}
+
+
