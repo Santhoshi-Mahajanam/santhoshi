@@ -2,18 +2,27 @@
 	<head>
 		<!--head part links required files to the page -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--links external css-->
 		<link rel="stylesheet" href="../css/ResponsiveGoogleMapPage.css">
+		<!-- links bootstrap cdn -->
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+	    <!-- links fonts styles -->
 	    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	    <!-- links jquery library -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <!-- links bootstarp js-->
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <!-- links angular js file -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	    <!-- links map min file -->
 	    <script src="../js/ng-map.min.js"></script>
 	    <script src="https://maps.google.com/maps/api/js?libraries=placeses,visualization,drawing,geometry,places"></script>
 	    <script type="text/javascript" src="../js/googleMapIntegrationPage.js"></script>
+	    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa-gG3bx6j_vGteIqzYyIZyOhq_DGBShY&callback=myMap"></script> -->
 	</head>
+	<!-- it defines root element -->
 	<body ng-app="responsiveGoogleMap">
+	<!-- below is a container with three directives -->
 		<div class="container-fluid">
 			<logo-bar></logo-bar>
 			<directive-for-navbar></directive-for-navbar>

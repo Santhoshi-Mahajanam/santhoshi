@@ -1,12 +1,15 @@
+/*below styles applied to logos horizontal bar*/
 .logoBar{
 	background-color:white;
 	/*height: 98px*/
 	padding-bottom: 2%;
 }
+/*below styles applied to horizontal navbar*/
 .navBar{
 	background-color: rgba(243,243,243,1);
 	margin-bottom: 0px !important;
 }
+/*below styles will be applied to logo*/
 .logo{
 	float:left !important;
 	padding-right: 0px !important;
@@ -14,117 +17,131 @@
 	top:12px;
 	position: relative;
 }
+/*below styles will be applied to div in which searchbox is present*/
 .searchButtonContainer{
 	float:right !important;
 	top:12px;
 	position:relative;
 }
-
+/*the below styles will be applied to*/
 .mainContainer{
 	padding-right: 0px !important;
 	padding-left: 0px !important;
 }
+/*the below styles will be applied to navbar*/
 .navBarContainer{
 	padding-right: 0px !important;
 	padding-left: 0px !important;
-	margin-right:20px !important;
+	margin-right: 20px !important;
 
 }
+/*the below styles will be applied to*/
 .mapDetailsContainer{
 	background-color: rgba(252,250,251,1);
 	height:157px;
 
 }
+/*the below styles will be applied to search input box*/
 .searchBox{
 	width:358px;
 	height:42px;
 	right:116px;
+	padding-top: 10px !important;
 
 }
+/*the below styles will be applied to input element*/
 .searchBox input{
 	border-radius: 0px !important; 	
 }
+/*the below styles will be applied to glyphicon search*/
 .searchGlyphicon{
 	position: absolute !important;
     right: 24px;
-    top: 10px !important;
+    top: 20px !important;
 
 }
-.circle{
-	background: #f00;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position:relative;
-    top:6px;
-    left:200px !important;
-}
+/*the below styles will be applied to glyphicon user*/
 .userGlyphicon{
 	position:absolute !important;
-	top:10%;
+	top:10% !important;
+	left:18% !important;
 	font-size: 18px !important;
-    padding: 7% 5% 5% 10% !important;
+    padding: 10% 10% 10% 10% !important;
 }
+/*the below styles will be applied to square outside glyphicon align-justify*/
 .menuDiv{
-	/*height:64px;
-	width:64px;*/
 	background-color: rgba(135,180,85,1);
-	padding:20px;
-	top:10px;
-	left: 1px;
+    position: relative;
+    padding: 5.8%;
+    top: 3.6px;
 }
+/*the below styles will be applied to*/
 .mapMarker{
 	padding-right:36px !important;
 }
+/*the below styles will be applied to */
 .thLarge{
-	right:20px !important;
+	right:10px !important;
 }
+/*the below styles will be applied to*/
 .mainContainer{
 	
 	padding-left:0px !important;
 	padding-right: 0px !important;
 }
+/*the below styles will be applied to html element*/
 html{
 	width:100% !important;
 }
+/*the below styles will be applied to image in the third horizontal bar which is above the map*/
 .img{
 	left:75px;
 }
+/*the below styles will be applied to*/
 .optionVertical{
 	right:20px !important;
 }
+/*the below styles will be applied to text farmer dashboard*/
 .Farmer{
 	padding-left:24px !important;
 	top:24px;
 }
+/*the below styles will be applied to div which has to be viewed in inline*/
 .navBarDisplay{
 	display: inline !important; 
 
 }
+/*the below styles will be applied to*/
 .mapContainer{
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 	margin-right: -20px !important;
 	margin-left: -20px !important;
 }
+/*the below styles will be applied to*/
 .mapData{
 	padding-left:40px;
 }
+/*the below styles will be applied to*/
 .font{
-	font-size: 30px;
+	font-size: 25px;
 }
+/*the below styles will be applied to glyphicons in first and second horizontal bars*/
 .font1{
 	font-size: 25px;
 }
+/*the below styles will be applied to glyphicon tint*/
 .tintColor{
 	color:rgba(75,143,224,1);
 }
+/*the below styles will be applied to*/
 .map{
 	padding-right: 0px !important;
 	padding-left: 0px !important;
 	margin-right: -15px !important;
 	margin-left: -15px !important;
 }
+/*the below styles will be applied to characters*/
 @font-face {
     font-family: FiraSans-Light;
     src: url("fira-sans/FiraSans-Light.ttf") format('truetype');
@@ -133,6 +150,7 @@ html{
 *{
     font-family: FiraSans-Light;
 }
+/*the below styles will be applied to circle outside the user glyphicon*/
 .userCircle{
 	width: 40px;
     height: 40px;
@@ -142,36 +160,71 @@ html{
     background: red;
     margin-left: 27%;
 	background-color: rgba(216,216,216,1);
+	position:relative;
+	top:8px;
 	
 }
+/*the below styles will be applied to glyphicon vertical option*/
 .verticalOption{
 	margin-right: -30px;
+	top:14px !important;
 }
+/*the below styles will be applied to */
 .mapColor{
 	color: rgba(65,159,213,1);
-	top:12px !important;
+	top:8px !important;
 }
+/*the below styles will be applied to glyphicon grain*/
 .grainColor{
 	color: rgba(209,224,193,1);
 }
+/*the below styles will be applied to glyphicon grain*/
 .glyphicon-grain{
 	font-size: 15px;
 }
+/*the below styles will be applied to grain*/
 .grain{
 	margin-right:-8px;
 }
+/*the below styles will be applied to glyphicon grain*/
 .grain1{
 	margin-left: -8px;
 }
+/*the below styles will be applied to google map*/
 #map {
     width: 100%;
     height: 450px;
 }
+/*the below styles will be applied to glyphicon th-large*/
 .thLarge{
-	top:12px !important;
+	top:8px !important;
 }
+/*the below styles will be applied to all bold tags*/
 b{
 	font-weight:500 !important;
+	top:12px !important;
 }
-
-
+/*the below styles will be applied to*/
+.color{
+	color: rgba(247,255,235,1) !important;
+	top:10px !important;
+	left:1px !important;
+}
+.position{
+	top:14px !important;
+}
+.navbar-collapse{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.center{
+	text-align: center;
+	top:12px !important;
+}
+.search{
+	top:8px !important;
+}
+.text{
+	position:relative;
+	top:10px;
+}

@@ -1,24 +1,29 @@
+<!-- this directives shows logo,searchbox,userglyphicon and vertical option glyphicon in view -->
+<!-- below row class divides navbar into 12 columns -->
 <div class="row logoBar">
-
-	<div class="col-md-4 logo img">
+<!-- below container shows a logo in view and occupies four colums out of 12-->
+	<div class="col-md-4 col-xs-8 logo img">
 		<img src="Novocloud-logo.png" alt="Novocloud-logo" height="50px" width="114px">
 	</div>
+	<!-- below container shows searchbox and two glyphicons which is on the right of the first horizontal bar and it occupies 8 columns out of 12-->
 	<div class="col-md-8 searchButtonContainer ">
-		<div class = "col-md-10">
+	<!-- container contains search box with search glyphicon in it -->
+		<div class = "col-md-10 col-xs-20">
 			<div class="form-group pull-right searchBox">
-					<input type="text" class="form-control" id="usr">
+					<input type="text" class="form-control search" id="usr">
 					<span class="glyphicon glyphicon-search searchGlyphicon "></span>
 			</div>		
 		</div>
-		
-		<div class = "col-md-2">
+		<!-- container contains circle with user glyphicon in it and a vertical option glyphicon -->
+		<div class = "col-md-2 col-xs-4">
 			<div class="pull-right">
 				<span class="glyphicon glyphicon-option-vertical font pull-right verticalOption"></span>
 			</div>
-			<div class="userCircle"><span class="glyphicon glyphicon-user userGlyphicon font"></span>
+			<div class="userCircle">
+				<span class="glyphicon glyphicon-user userGlyphicon font"></span>
 			</div>
 			
-			</div>
+		</div>
 				
 	</div>		
 </div>
