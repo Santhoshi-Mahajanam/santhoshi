@@ -1,0 +1,58 @@
+.add{
+	height:45px;
+	width:900px;
+	background-color: rgba(227,241,226,1);
+}
+.completeDiv{
+	top:50%;
+	position: relative;
+	width:1000px;
+	background-color: rgba(255,255,255,1) !important;
+}
+.center{
+	text-align: center;
+}
+.tr1{
+	background-color: rgba(234,234,234,1)!important;
+}
+th{
+	color: rgba(171,162,165,1);
+}
+.modal{
+	width:900px !important;
+	height: 600px !important;
+
+}
+.button,.button:hover,.button:active,.button:focus,.button:active:focus{
+	background: none !important;
+    border-color: none !important;
+    left: 45%;
+    border: 0px;
+    position: relative;
+    outline: none;
+}
+.form{
+	width:100% !important;
+}
+.span{
+	color:red;
+	font-size:25px;
+}
+.icons{
+	font-size: 25px;
+}
+.body{
+	top: 30%;
+	position: relative;
+}
+.tableHeader{
+	height:45px;
+	width:900px;
+}
+.scroll{
+	overflow-y:scroll;
+}
+.removePadding{
+	padding-right: 0px !important;
+	padding-left:0px !important; 
+}

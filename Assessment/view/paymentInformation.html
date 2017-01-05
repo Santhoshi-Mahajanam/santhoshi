@@ -1,0 +1,150 @@
+<div class="add container">
+    <button type="button" class="btn btn-default btn-lg button" data-toggle="modal" data-target="#myModal">+Add</button>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Payment Information
+            </div>
+            <div class="modal-body scroll">
+                <div>
+                    <form class="form-inline row">
+                        <div class="form-group  col-md-6">
+                            Payment Type<span class="span">*</span>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle form-control form" type="button" data-toggle="dropdown">select
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li  ng-repeat="Parameter in ParameterData">
+                                    {{Parameter.path.split('\\')[2]}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            Accounting type<span class="span">*</span>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle form-control form" type="button" data-toggle="dropdown">select
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li ng-repeat="accounting in AccountingData"><a href="#">{{accounting.value}}</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <form class="form-inline row">
+                        <div class="form-group col-md-4">
+                            Frequency<span class="span">*</span>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle form" type="button" data-toggle="dropdown">select
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li ng-repeat="frequency in FrequencyData"><a href="#">{{frequency.path.split("\\")[2]}}</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                       
+                        <div class="form-group col-md-4">
+                             period Start Date<span class="span">*</span>
+                            <div class="col-xs-5 date">
+                                <div class="input-group input-append date" id="dateRangePicker">
+                                    <input type="text" class="form-control form" name="date" />
+                                    <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-md-4">
+                            Payment Timing<span class="span">*</span>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle form-control form" type="button" data-toggle="dropdown">select
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li ng-repeat="timing in PaymentTimingData"><a href="#">{{timing.value}}</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <form class="form-inline row">
+                        <div class="form-group col-md-4">
+                            Payment Due On<span class="span">*</span>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle form-control form" type="button" data-toggle="dropdown">select
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li ng-repeat="dueOn in PaymentDueOnData"><a href="#">{{dueOn.value}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            Payment Due Day<span class="span">*</span>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle form-control form" type="button" data-toggle="dropdown">select
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li ng-repeat="dueDay in PaymentDueData"><a href="#">{{dueDay.value}}</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            Accounting Cost Center<span class="span">*</span>
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle form-control form" type="button" data-toggle="dropdown">select
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li ng-repeat="centerCost in PaymentTimingData"><a href="#">{{centerCost.value}}</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <form class="form-inline">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Option Term Payment
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <br>
+                        <textarea class="form-control" rows="3" id="description"></textarea>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                     <i class="fa fa-info-circle icons"></i>
+                    <i class="fa fa-calendar-o icons"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
