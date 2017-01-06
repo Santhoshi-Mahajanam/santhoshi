@@ -1,0 +1,27 @@
+<div class="tableHeader container removePadding">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr class="tr1">
+                    <th></th>
+                    <th>Frequency Type</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Total Cash With Tax</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="showData in storeDetails">
+                <td>{{showData.frequency}}</td>
+                <td></td>
+                <td></td>
+                <td><button><i class="fa fa-times" aria-hidden="true" ng-click="delete()"></i></button></td>
+                <td><button><i class="fa fa-pencil" aria-hidden="true" ng-click="edit(storeDetails)"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
+       
+    </div>
+
+</div>

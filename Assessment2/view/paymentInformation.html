@@ -1,0 +1,207 @@
+<div class="add container">
+    <button type="button" class="btn btn-default btn-lg button" data-toggle="modal" data-target="#myModal">+Add</button>
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Payment Information
+            </div>
+            <div class="modal-body scroll" >
+                <div ng-show="(firstModal) || (!secondToFirst)">
+                    <form class="form-inline row">
+                        <div class="form-group  col-md-6">
+                            Payment Type<span class="span">*</span>
+                            <div class="dropdown">
+                                <input type="text" placeholder="select" class="dropdown-toggle" data-toggle="dropdown" ng-model="duePay" readonly>
+                                <ul class="dropdown-menu" ng-model="payment">
+                                    <li  ng-repeat="Parameter in storePaymentPath">
+                                        <a href="#" ng-click="click(parameter)">{{Parameter.path.split("\\")[2]}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            Accounting type<span class="span">*</span>
+                            <div class="dropdown">
+                                 <input type="text" placeholder="select" class="dropdown-toggle" data-toggle="dropdown" ng-model="account" readonly>
+                                <ul class="dropdown-menu">
+                                    <li><input type="text" ng-model="searchAccount"></li>
+                                    <li ng-repeat="accounting in AccountingData | filter:searchAccount"><a href="#" ng-click="accountingClick(accounting.value)">{{accounting.value}}</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                
+                <div>
+                    <form class="form-inline row">
+                        <div class="form-group col-md-4">
+                            Frequency<span class="span">*</span>
+                            <div class="dropdown">
+                                <input type="text" placeholder="select" class="dropdown-toggle" data-toggle="dropdown" ng-model="frequency1" readonly>
+                                <ul class="dropdown-menu">
+                                    <li><input type="text" ng-model="freqData"></li>
+                                    <li ng-repeat="fre in storeFreqPath | filter:freqData"><a href="#" ng-click="frequencyClick(fre)">{{fre}}</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                       
+                        <div class="form-group col-md-4">
+                             period Start Date<span class="span">*</span>
+                            <div class="col-xs-5 date">
+                                <div class="input-group input-append date" id="dateRangePicker">
+                                    <input type="text" class="form-control form" name="date" ng-model="calender" />
+                                    <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group col-md-4">
+                            Payment Timing<span class="span">*</span>
+                            <div class="dropdown">
+                                 <input type="text" placeholder="select" class="dropdown-toggle" data-toggle="dropdown" ng-model="paymentTime" readonly>
+                             
+                               
+                                <ul class="dropdown-menu">
+                                    <li><input type="text" ng-model="searchTiming"></li>
+                                    <li ng-repeat="timing in PaymentTimingData | filter:searchTiming"><a href="#" ng-click="paymentTimingClick(timing.value)">{{timing.value}}</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <form class="form-inline row">
+                        <div class="form-group col-md-4">
+                            Payment Due On<span class="span">*</span>
+                            <div class="dropdown">
+                                <input type="text" placeholder="select" class="dropdown-toggle" data-toggle="dropdown" ng-model="dueOn" readonly>
+                                <ul class="dropdown-menu">
+                                     <li><input type="text" ng-model="searchDueOn"></li>
+                                    <li ng-repeat="dueOn in PaymentDueOnData | filter:searchDueOn"><a href="#" ng-click="paymentDueOnClick(dueOn.value)">{{dueOn.value}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            Payment Due Day<span class="span">*</span>
+                            <div class="dropdown">
+                                 <input type="text" placeholder="select" class="dropdown-toggle" data-toggle="dropdown" ng-model="due" readonly>
+                                <ul class="dropdown-menu">
+                                    <li><input type="text" ng-model="searchPayment"></li>
+                                    <li ng-repeat="dueDay in PaymentDueData | filter:searchPayment"><a href="#" ng-click="paymentDueDay(dueDay.value)">{{dueDay.value}}</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            Accounting Cost Center<span class="span">*</span>
+                            <input type="text" placeholder="select" ng-model="accountData">
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <form class="form-inline">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">Option Term Payment
+                        </label>
+                    </form>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <br>
+                        <textarea class="form-control" rows="3" id="description"></textarea>
+                    </div>
+                </div>
+                </div>
+            <div ng-show="(!firstModal) && (secondToFirst)">
+                <div class="row" > 
+                    <form class="form-inline">
+                      <div class="form-group col-md-6">
+                        GrowthType
+                        <div class="dropdown">
+                                <input type="text" placeholder="select" class="dropdown-toggle" data-toggle="dropdown" ng-model="growthDetails" readonly>
+                                <ul class="dropdown-menu">
+                                    <li ng-repeat="groData in GrowthData"><a href="#" ng-click="growthData(groData.value)">{{groData.value}}</a>
+                                    </li>
+                                   
+                                </ul>
+                            </div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="Fixed Growth">Fixed Growth</label><br>
+                        <input type="text" class="form-control" id="FixedGrowth" ng-model="fixedGrowth">
+                      </div>
+                    </form>
+                 </div>
+                <div class="row">
+                    <form class="form-inline">
+                      <div class="form-group col-md-6">
+                        <label for="NumberOfSchedules">Number Of Schedules</label><br>
+                        <input type="text" class="form-control" id="NumberOfSchedules" ng-model="schedules">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="AdjustEvery(x)month">Adjust Every(x) months</label><br>
+                        <input type="text" class="form-control" id="AdjustEvery(x)month" ng-model="adjustMonth">
+                      </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <form class="form-inline">
+                      <div class="form-group col-md-4">
+                        <label for="ChargeAmountBasis">Charge Amount Basis</label><br>
+                        <input type="text" class="form-control" id="ChargeAmountBasis" placeholder="Enter email">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="ContractRentable">Contract Rentable</label><br>
+                        <input type="text" class="form-control" id="ContractRentable" ng-model="rentableContract">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="ChargePerBasis">Charge Per Basis</label><br>
+                        <input type="text" class="form-control" id="ChargePerBasis" ng-model="charge">
+                      </div>
+                    </form>
+                </div>
+            </div>
+            </div>
+        
+            <div class="modal-footer text">
+                <div>
+                    <i class="fa fa-info-circle icons text"></i><br>
+                    
+                    <i class="fa fa-calendar-o icons text icon"></i><br>
+                </div>
+                <div>
+                    <p class="text">information</p>
+                    <p class="text">parameter</p>
+                </div>
+                <div class="alignAngleRight">
+                    <div ng-show="firstModal">
+                     <button ng-click="firstModal=!firstModal" class="btn btn-default"><i class="fa fa-angle-right"></i></button>
+                    </div>
+                    <div ng-show="!firstModal">
+                         <button  class="btn btn-default" ng-click="secondToFirst=!secondToFirst"><i class="fa fa-angle-left"></i></button>
+                        <button  class="btn btn-default"><i class="fa fa-angle-right"></i></button>
+                         <button class="btn btn-info" ng-click="save()" >Generate</button>
+                    </div>
+                </div>
+            </div>
+            
+        
+    </div>
+</div>
+
+   
+
+    
